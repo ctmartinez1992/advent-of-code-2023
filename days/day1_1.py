@@ -6,10 +6,12 @@ def process(line):
     for char in line[::1]:
         if char.isdigit():
             first = char
+            break
     last = 0
     for char in line[::-1]:
         if char.isdigit():
             last = char
+            break
     return first, last
 
 
