@@ -1,7 +1,7 @@
 from base import *
 
 
-def process(line):
+def process(i, line):
     first = 0
     for char in line[::1]:
         if char.isdigit():

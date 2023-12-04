@@ -15,7 +15,7 @@ digit_ints = {
 }
 
 
-def process(line):
+def process(i, line):
     found = {}
     for i, char in enumerate(line[::1]):
         if char.isdigit():

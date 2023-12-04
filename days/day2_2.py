@@ -6,7 +6,7 @@ green_limit = 13
 blue_limit = 14
 
 
-def process(line):
+def process(i, line):
     game_string = line.split(": ")
     game_id = int(game_string[0].split("Game ")[1])
 
