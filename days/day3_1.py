@@ -21,7 +21,7 @@ def final(_):
         row = matrix.get_row(i)
         for m in re.finditer('\d{1,3}', row):
             start, end, is_valid = m.start(0), m.end(0), False
-            for j in range(start - 1, end + 2):
+            for j in range(start - 1, end + 1):
                 if i > 0 and j < H and j >= 0:
                     if matrix.get_value(i - 1, j) not in NOT_SYMBOL_LIST:
                         is_valid = True
