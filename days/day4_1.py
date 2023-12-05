@@ -1,6 +1,4 @@
-from base import *
-import re
-from collections import defaultdict
+from base import 
 
 
 def get_all_numbers(line):
