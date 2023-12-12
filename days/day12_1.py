@@ -40,7 +40,6 @@ def final(results: list):
 	total = 0
 	for r in results:
 		string, config = r
-		string = "?".join([string])
 		total += combinations_and_cache(string, config)
 	return total
 
